@@ -1,2 +1,2 @@
-# be-a-hero
+# be-the-hero
 Projeto da Semana OmniStack | RocketSeat
