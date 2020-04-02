@@ -19,6 +19,6 @@ Após estar com todos os pacotes instalados, execute o comando:
 ```shell
 npm start
 ```
-Pronto! A pagina irá inicar localmente :rocket:
+Pronto! A pagina irá iniciar localmente :rocket:
 
 
