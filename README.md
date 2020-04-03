@@ -29,9 +29,9 @@ API Rest para cadastramento e validação de login!
 Entre na pasta `api` e execute o comando:
 
 ```shell
-npm i :package:
+npm i 
 ```
-
+:package:
 O gerenciador de pacotes irá instalar todas as dependências seguindo o arquivo package.json.
 
 Após estar com todos os pacotes instalados, execute o comando:
