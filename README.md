@@ -12,7 +12,7 @@ Clone o repositório em sua máquina e acesse a pasta raiz do projeto e rodar o 
 npm i
 ```
 
-O gerenciador de pacotes irá instalar todas as dependências seguindo o arquivo package.json.
+O gerenciador de pacotes irá instalar todas as dependências seguindo o arquivo package.json. :package:
 
 Após estar com todos os pacotes instalados, execute o comando:
 
@@ -31,8 +31,7 @@ Entre na pasta `api` e execute o comando:
 ```shell
 npm i 
 ```
-:package:
-O gerenciador de pacotes irá instalar todas as dependências seguindo o arquivo package.json.
+O gerenciador de pacotes irá instalar todas as dependências seguindo o arquivo package.json. :package:
 
 Após estar com todos os pacotes instalados, execute o comando:
 
