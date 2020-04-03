@@ -1,12 +1,12 @@
 # be-the-hero
 Projeto da Semana OmniStack | RocketSeat
 
-Esse é um projeto piloto usando React & SCSS.
-Contém apenas duas paginas uma de login e cadastro
+Esse é um projeto piloto usando o FrameWork React.
+Contém apenas duas paginas uma de login e cadastro.
 
 ## Primeiro e único passo
 
-Clone o repositório em sua máquinaacessar a pasta raiz do projeto e rodar o comando:
+Clone o repositório em sua máquina e acesse a pasta raiz do projeto e rodar o comando:
 
 ```shell
 npm i
