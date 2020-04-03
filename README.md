@@ -22,7 +22,7 @@ npm start
 Pronto! A pagina irá iniciar localmente :rocket:
 
 # API 
-API Rest para cadastramento e validação de login!
+API para cadastramento e validação de login!
 
 ## Primeiro passo
 
