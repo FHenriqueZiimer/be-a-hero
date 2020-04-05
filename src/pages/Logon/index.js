@@ -17,23 +17,21 @@ function Logon() {
   async function handleLogin (_,e) {
     e.preventDefault();
 
-    try {
-      const response = await api.post('', { id });
-
-      localStorage.setItem('ongId', id); //salvando no browser o id
-      localStorage.setItem('ongName', response.data.name)
+    await api.post('login', { id }).then(res => {
+      localStorage.setItem('userId', id); //salvando no browser o id
+      localStorage.setItem('userName', res.data.name)
 
       swal.fire({
         icon:'success',
         title: 'Parabéns!',
-        text: `Olá ${response.data.name}! Seu login foi realizado com sucesso!`
+        text: `Olá ${res.data.name}! Seu login foi realizado com sucesso!`
       })
-    } catch (error) {
+    }).catch(error => {
       swal.fire({
         icon:'error',
         text: 'Erro no Login, verifique se o ID está correto'
       })
-    }
+    })
   }
 
   return (

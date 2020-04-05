@@ -11,7 +11,7 @@ function Register() {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [whatsApp, setWhatsApp] = useState('');
+  const [number, setNumber] = useState('');
   const [city, setCity] = useState('');
   const [uf, setUf] = useState('');
 
@@ -20,44 +20,68 @@ function Register() {
   const { register, handleSubmit, errors } = useForm();
 
 
-  async function handleRegister(_, e) {
-    e.preventDefault();
+async function handleRegister(e) {
+  e.preventDefault();
 
-
-    const data ={
-      name,
-      email,
-      whatsApp,
-      city,
-      uf
+  function validationField() {
+    if(name.replace(' ', '') === '') {
+      const inputName = document.getElementsByName('name')[0]
+      inputName.style.borderColor = "red";
+      return inputName.focus();
     }
-
-    try {
-      const response = api.post('ongs', data)
-      swal.fire({
-        text: `Seu id foi criado: ${response.data.id}`,
-        showClass: {
-          popup: 'animated fadeInDown faster'
-        },
-        hideClass: {
-          popup: 'animated fadeOutUp faster'
-        }
-      })
-      history.push('/')
-    } catch (err) {
-      swal.fire({
-        icon: 'error',
-        text: 'Erro no cadastro, tente novamente',
-        showClass: {
-          popup: 'animated fadeInDown faster'
-        },
-        hideClass: {
-          popup: 'animated fadeOutUp faster'
-        }
-      });
-    }
-
   }
+
+
+  await validationField();
+    // if(name.replace(' ', '') === '') {
+    //   const inputName = document.getElementsByName('name')[0]
+    //   inputName.style.borderColor = "red";
+    //   inputName.focus();
+    // }
+    // if (email === '' ) {
+    //   const inputEmail = document.getElementsByName('email')[0]
+    //   inputEmail.style.borderColor = "red";
+    //   inputEmail.focus();
+    // }
+    //  else {
+    //   document.getElementsByName('name')[0].style.borderColor = "";
+    //   document.getElementsByName('email')[0].style.borderColor = "";
+    // }
+  const data ={
+    name,
+    email,
+    number,
+    city,
+    uf
+  }
+
+  api.post('user', data).then(res => {
+    swal.fire({
+      text: `Seu id foi criado: ${res.data.id}`,
+      showClass: {
+        popup: 'animated fadeInDown faster'
+      },
+      hideClass: {
+        popup: 'animated fadeOutUp faster'
+    }
+  })
+   history.push('/')
+
+  }).catch(error => {
+    alert(error)
+    swal.fire({
+      icon: 'error',
+      text: 'Erro no cadastro, tente novamente',
+      showClass: {
+        popup: 'animated fadeInDown faster'
+      },
+      hideClass: {
+        popup: 'animated fadeOutUp faster'
+      }
+    });
+
+  })
+}
 
   return (
     <div className="register-container">
@@ -73,19 +97,12 @@ function Register() {
                 Login
             </Link>
             </section>
-          <form onSubmit={handleSubmit(handleRegister)}>
+          <form onSubmit={handleRegister}>
             <input
               name="name"
-              ref={register({
-                required: 'Nome obrigatório',
-                pattern: {
-                  value:  /^[A-Za-z]+$/i,
-                  message: 'Nome inválido'
-                }
-                })}
-              placeholder="* Nome da ONG"
+              placeholder="* Nome"
               value={name}
-              onChange={e => setName(e.target.value)}
+              onChange={e => {setName(e.target.value)}}
             />
             <span className="error">
               {errors.name && errors.name.message}
@@ -111,12 +128,12 @@ function Register() {
               placeholder="* WhatsApp"
               minLength="12"
               maxLength="12"
-              name="phoneNumber"
+              name="number"
               ref={register({
                 required: 'Número obrigatório',
                 })}
-              value={whatsApp}
-              onChange={e => setWhatsApp(e.target.value.replace(/\D/,''))}
+              value={number}
+              onChange={e => setNumber(e.target.value.replace(/\D/,''))}
             />
              <span className="error">
               {errors.phoneNumber && errors.phoneNumber.message}
