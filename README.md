@@ -3,7 +3,14 @@ Projeto da Semana OmniStack 11 | RocketSeat
 
 Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
 
-Contém apenas duas paginas uma de login e cadastro.
+# Meu projeto possui alguns diferenciais:
+
+:sparkles: Validações no front-end
+
+:sparkles: Aquitetura da aplicação
+
+:sparkles: Estilização com SASS
+
 
 ## Primeiro passo para inicar a pagina
 
