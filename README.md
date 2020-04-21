@@ -9,7 +9,7 @@ Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
 
 :sparkles: Regras de negócio na Api
 
-:sparkles: Aquitetura a aplicação
+:sparkles: Aquitetura da aplicação
 
 :sparkles: Estilização com SASS
 
