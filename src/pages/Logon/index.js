@@ -65,15 +65,17 @@ class Logon extends Component {
         errors: ''
       })
 
-      await api.post('login', { id: this.state.id }).then(res => {
+      await api.post('login', { id: this.state.id }).then(async res => {
         localStorage.setItem('userId', this.state.id);
         localStorage.setItem('userName', res.data.name)
 
-        swal.fire({
+       await swal.fire({
           icon:'success',
           title: 'Parabéns!',
           text: `Olá ${res.data.name}! Seu login foi realizado com sucesso!`
         })
+
+        this.props.history.push('/incidents');
       }).catch(error => {
         swal.fire({
           icon:'error',
@@ -93,7 +95,7 @@ class Logon extends Component {
             <h1>Faça seu Login</h1>
 
             <input
-              placeholder="Seu Id"
+              placeholder="* Seu Id"
               name="id"
               ref={this.inputId}
               value={this.state.id}

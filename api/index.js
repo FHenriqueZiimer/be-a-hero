@@ -1,5 +1,6 @@
 const express = require('express');
-const routes = require('./routes/userRoutes');
+const userRoutes = require('./routes/userRoutes');
+const incidentsRoutes = require('./routes/incidentsRoutes')
 
 const cors = require('cors');
 const app = express();
@@ -7,7 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.use(routes)
+app.use(incidentsRoutes)
+app.use(userRoutes)
 
 
 app.listen(5000);

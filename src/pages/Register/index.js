@@ -148,7 +148,7 @@ render () {
             ref={this.inputName}
             placeholder="* Nome"
             value={this.state.name}
-            onChange={(e) => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
           />
           <span className="error">
             {this.state.errors.name}
@@ -159,7 +159,7 @@ render () {
             ref={this.inputEmail}
             placeholder="* E-mail"
             value={this.state.email}
-            onChange={(e) => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
           />
             <span className="error">
               {this.state.errors.email}
@@ -182,7 +182,7 @@ render () {
             placeholder="Cidade"
             name="city"
             value={this.state.city}
-            onChange={(e) => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
           />
 
           <input
@@ -191,7 +191,7 @@ render () {
             name="uf"
             style={{width: 80}}
             value={this.state.uf.toUpperCase()}
-            onChange={(e) => this.handleChange(e)}
+            onChange={e => this.handleChange(e)}
           />
           <span className="error">
             {this.state.errors.uf}

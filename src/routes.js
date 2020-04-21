@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Logon from './pages/Logon';
 import Register from './pages/Register';
+import Incidents from './pages/Incidents';
+import NewIncidents from './pages/NewIncidents';
 import NotFound from './pages/404';
 
 function Routes() {
@@ -11,6 +13,8 @@ function Routes() {
       <Switch>
         <Route path="/" exact component={Logon} />
         <Route path="/register" component={Register} />
+        <Route path="/incidents" exact component={Incidents} />
+        <Route path="/incidents/new" exact component={NewIncidents} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
