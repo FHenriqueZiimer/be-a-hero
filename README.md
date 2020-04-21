@@ -6,9 +6,12 @@ Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
 # Meu projetos possui alguns diferenciais:
 
 :sparkles: Validações no front-end
+
 :sparkles: Regras de negócio na Api
+
 :sparkles: Aquitetura a aplicação
-:sparkles: Stilização com SASS
+
+:sparkles: Estilização com SASS
 
 
 ## Primeiro passo para inicar a pagina
