@@ -1,6 +1,10 @@
 # Be the Hero
 Projeto da Semana OmniStack 11 | RocketSeat
 
+<a href="https://www.linkedin.com/in/fábio-h-ferreira/" target="_blank" >
+    <img alt="Linkedin - Fábio Henrique" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+</a>
+
 Esse é um projeto usando o FrameWork [React](https://reactjs.org).
 
 # Meu projeto possui alguns diferenciais:
