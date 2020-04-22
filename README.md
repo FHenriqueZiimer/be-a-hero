@@ -53,10 +53,15 @@ Após estar com todos os pacotes instalados, execute o comando:
 npm start 
 ```
 
-Pronto! A api estará rodando e sendo consumida pela pagina
+Pronto! A api estará rodando e sendo consumida pela pagina.
 
+## Contato
 
 <a href="https://www.linkedin.com/in/fábio-h-ferreira/" target="_blank" >
     <img alt="Linkedin - Fábio Henrique" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+</a>
+
+<a href="mailto:fabohenrique@live.com" target="_blank" >
+    <img alt="Email - Fábio Henrique" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
 </a>
 
