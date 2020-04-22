@@ -55,19 +55,6 @@ npm start
 
 Pronto! A api estará rodando e sendo consumida pela pagina
 
-<p align="center">
-  <img alt="Languagues" src="https://img.shields.io/github/languages/count/solrachix/be-the-hero">
-  <img alt="Top Languague" src="https://img.shields.io/github/languages/top/solrachix/be-the-hero">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/solrachix/be-the-hero">
-  <a href="https://github.com/solrachix/be-the-hero/commits/master">
-    <img alt="Last commit date" src="https://img.shields.io/github/last-commit/solrachix/be-the-hero">
-  </a>
-   <a href="https://github.com/solrachix/be-the-hero/issues">
-    <img alt="Repository issues" src="https://img.shields.io/github/issues/solrachix/be-the-hero">
-  </a>
-  <img alt="License" src="https://img.shields.io/github/license/solrachix/be-the-hero">
-</p>
-<p align="center">
 
 <a href="https://www.linkedin.com/in/fábio-h-ferreira/" target="_blank" >
     <img alt="Linkedin - Fábio Henrique" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
