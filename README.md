@@ -15,8 +15,6 @@ Esse é um projeto usando o FrameWork [React](https://reactjs.org).
 
 :sparkles: Validação de Email já cadastrado
 
-:sparkles: Estilização com SASS
-
 
 ## Primeiro passo para inicar o projeto :rocket:
 
