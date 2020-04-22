@@ -104,11 +104,15 @@ class Logon extends Component {
             <span className="error">
               {this.state.errors.id}
             </span>
+            <Link className="recover-link" to="/recover">
+                  Esqueci meu ID
+              </Link>
             <button className="button" type="submit">Entrar</button>
               <Link className="back-link" to="/register">
                 <FiLogIn size={16} color="#E02041"/>
                   Não tenho cadastro
               </Link>
+
             </form>
           </section>
         <img src={heoresImg} alt="Heroes" />

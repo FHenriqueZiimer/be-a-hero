@@ -6,5 +6,6 @@ const routes = express.Router();
 
 routes.post('/user', validationMiddleware(schemas.registerBody, 'body'), UserController.createUser)
 routes.post('/login', UserController.login )
+routes.post('/recover', UserController.recoverId)
 
 module.exports = routes
