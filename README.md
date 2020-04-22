@@ -18,7 +18,7 @@ Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
 :sparkles: Estilização com SASS
 
 
-## Primeiro passo para inicar a pagina
+## Primeiro passo para inicar o projeto :rocket:
 
 Clone o repositório em sua máquina e acesse a pasta raiz do projeto e rodar o comando:
 
