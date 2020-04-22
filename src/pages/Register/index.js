@@ -48,6 +48,7 @@ class Register extends Component {
    };
 
   validateRegister () {
+
     let valid = true;
     const errorsMessage = {};
 
@@ -110,9 +111,15 @@ class Register extends Component {
             popup: 'animated fadeOutUp faster'
         }
       });
-      this.props.history.push('/');
-      }).catch(error => {
-        console.log(error)
+        this.props.history.push('/');
+      }).catch((err) => {
+        if(err.response !== undefined) {
+          this.inputEmail.current.style.borderColor = 'red'
+          return this.setState({ errors: {
+            email: 'Email já cadastrado'
+          } })
+        }
+
         swal.fire({
           icon: 'error',
           text: 'Erro no cadastro, tente novamente',

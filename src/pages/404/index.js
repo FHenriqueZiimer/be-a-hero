@@ -7,8 +7,8 @@ import './style.scss';
 
 export default () => {
   return (
-    <div className="containerError">
-      <div className="contentError">
+    <div className="container-error">
+      <div className="content-error">
         <h1>404</h1>
           <p>Ops! Não encontramos oque você está procurando... Volte ao início para tentar novamente</p>
         <Link className="back-link" to="/">

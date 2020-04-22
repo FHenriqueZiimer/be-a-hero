@@ -1,4 +1,4 @@
-.containerError {
+.container-error {
   width: 100%;
   max-width: 1120px;
   height: 100vh;
@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.contentError {
+.content-error {
   width: 100%;
   padding: 96px;
   background: #f0f0f5;
@@ -24,7 +24,6 @@
 
   h1 {
     font-size: 100px;
-    font-weight: bolder;
     color: #e02041;
     font-weight: bolder;
   }
