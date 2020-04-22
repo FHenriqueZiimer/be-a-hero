@@ -9,6 +9,12 @@ Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
 
 :sparkles: Aquitetura da aplicação
 
+:sparkles: Recuperação do ID via Email
+
+:sparkles: Regra de negócio na api
+
+:sparkles: Validação de Email já cadastrado
+
 :sparkles: Estilização com SASS
 
 
