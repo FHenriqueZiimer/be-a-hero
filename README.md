@@ -1,19 +1,28 @@
-# Be the Hero
+<h2 align="center">BE THE HERO </h2>
+
 Projeto da Semana OmniStack 11 | RocketSeat
 
-Esse é um projeto usando o FrameWork [React](https://reactjs.org).
+## :computer: Tecnologias
+
+- **JavaScript**
+- **React**
+- **NodeJS**
+- **HTML**
+- **SCSS**
+- ORM
+  - [KnexJS](http://knexjs.org/)
 
 # Meu projeto possui alguns diferenciais:
 
-:sparkles: Validações no front-end
+* **Validações de campo**
 
-:sparkles: Aquitetura da aplicação
+* **Aquitetura da aplicação**
 
-:sparkles: Recuperação do ID via Email
+* **Recuperação do ID via Email**
 
-:sparkles: Regra de negócio na api
+* **Regra de negócio na api**
 
-:sparkles: Validação de Email já cadastrado
+* **Validação de Email já cadastrado**
 
 
 ## Primeiro passo para inicar o projeto :rocket:
