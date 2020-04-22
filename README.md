@@ -1,7 +1,7 @@
 # Be the Hero
 Projeto da Semana OmniStack 11 | RocketSeat
 
-Esse é um projeto piloto usando o FrameWork [React](https://reactjs.org).
+Esse é um projeto usando o FrameWork [React](https://reactjs.org).
 
 # Meu projeto possui alguns diferenciais:
 
