@@ -12,7 +12,7 @@ Projeto da Semana OmniStack 11 | RocketSeat
 - ORM
   - [KnexJS](http://knexjs.org/)
 
-# Meu projeto possui alguns diferenciais:
+# :sparkles: Diferenciais:
 
 * **Validações de campo**
 
